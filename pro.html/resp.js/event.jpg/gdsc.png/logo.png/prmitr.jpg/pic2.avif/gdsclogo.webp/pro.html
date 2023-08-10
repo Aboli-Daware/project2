@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GDSC</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/resp.js"></script>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html{
+		scroll-behavior: smooth;
+	}
+	.logo{
+		width: 20%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.logo img{
+		width: 33%;
+		border: 3px solid black;
+		border-radius: 50px;
+	}
+	.navbar{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: sticky;
+		top: 0;
+		cursor: pointer;
+			}
+	.nav-list{
+width: 70%;
+/* background-color: black; */
+display: flex;
+align-items: center;
+	}
+	.nav-list li{
+list-style: none;
+padding: 26px 30px;
+
+	}
+.nav-list li a{
+text-decoration: none;
+color: black;
+}
+.nav-list li a:hover{
+text-decoration: none;
+color: gray;
+font-size: 20px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.rightNav{
+	/*background-color: purple; */
+	width: 30%;
+	text-align: right;
+	padding: 0 23px;
+}
+#search{
+	padding: 5px;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 9px;
+}
+.firstsection{
+	height: 100vh;
+	display: flex;
+}
+.box-main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:black;
+	font-family: 'segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	max-width: 50%;
+	margin: auto;
+	height: 80%;
+}
+.firsthalf{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+.secondhalf{
+	width: 30%;
+}
+.secondhalf img{
+	border: 4px solid white;
+	border-radius: 250px;
+	display: block;
+	margin: center;
+}
+.text-big{
+font-size: 50px;
+}
+.text-small{
+font-size: 25px;
+}
+.btn{
+	padding: 8px 20px;
+	margin: 7px 0;
+	border: 2px solid blue;
+	border-radius: 8px;
+	font-size: 18px;
+	cursor: pointer;
+}
+.btn-sm{
+	padding: 6px 10px;
+	vertical-align: middle;
+}
+.btn-dark{
+	color:black;
+	border: 2px solid black;
+}
+.secright{
+	height: 500px;
+	display:flex;
+	align-content: center;
+	justify-content: space-evenly;
+	font-family: 'segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: auto;
+}
+
+.paras{
+	padding: 0px 65px;
+	max-width: 50%;
+	margin: auto;
+	height: 20%;
+}
+.event{
+	height: 900px;
+	display:flex;
+	align-content: center;
+	justify-content: space-evenly;
+	font-family: 'segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: auto;
+                }
+	.manage{
+	padding: 0px 65px;
+	max-width: 90%;
+	margin: auto;
+	font-family: 'segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height: 5%;
+	}
+	.contact{
+		background-attachment: #f6f5f4;
+		height: 833px;
+
+	}
+	.text-center{
+		text-align: center;
+		padding: 30px;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 35px;
+	}
+	.form{
+		max-width: 900px;
+		margin: 42px auto;
+	}
+	.form-input{
+		margin: 20px 0px;
+		padding: 5px 3px;
+		width: 100%;
+		font-size: 19px;
+		border: 2px solid grey;
+		border-radius: 6px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+	.text-footer{
+		text-align: center;
+		padding:  30px 0px;
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		display: flex;
+		justify-content: center;
+color: white;
+background-color: black;
+	}
+	@media only screen and (max-width: 1140px){
+.nav-list{
+	flex-direction: column;
+}
+.navbar{
+	flex-direction: column;
+}
+.rightNav{
+	text-align: center;
+}
+#search{
+	width: 100%;
+.burger{
+display: block;
+}
+.h-nav-resp{
+	height: 72px;
+}
+.v-class-resp{
+	opacity: 0;
+}
+.text-small{
+	text-align: center;
+}
+.text-big{
+	text-align: center;
+}
+.buttons{
+	text-align: center;
+}
+	}
+	.burger{
+		position: absolute;
+cursor: pointer;
+right: 5%;
+top: 15px;
+	}
+	.line{
+		width: 33px;
+		background-color: white;
+		height: 4px;
+		margin: 5px 3px;
+	}
+</style>
+<body>
+	<nav class="navbar background h-nav-resp">
+		<ul class="nav-list v-class-resp">
+			<div class="logo"><img src="pic/logo.png" alt="logo"></div>
+			<li><a href="#home">Home</a> </li>
+			<li><a href="#about">About us</a> </li>
+			<li><a href="#event">Event</a> </li>
+			<li><a href="#contact">Contact</a> </li>
+		</ul>
+		<div class="rightNav v-class">
+			<input type="text" name="search" id="search">
+			<button class="btn btn-sm">Search</button>
+		</div>
+		<div class="burger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</nav>
+	<section class="first section">
+		<div class="box-main">
+			<div class="firsthalf">
+				<p class="text-big">GOOGLE DEVELOPER STUDENT CLUB</p>
+				<p class="text-small">Google Developer Student Clubs are university based community groups for students interested in Google developer technologies.By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community</p>
+				<div class="buttons">
+					<button class="btn"><a href='https://developers.google.com/community/gdsc' class="active">LEARN MORE</button></a>
+				
+				</div>
+			</div>
+			<div class="secondhalf">
+				<img src="pic/pic2.avif" alt="" width="350" height="400">
+			</div>
+		</div>
+	</section>
+	<section class="secright" id="about">
+		<div class="paras">
+<p class="sectiontag text-big">About GDSC</p>
+<p class="sectionsubtag text-small"> Google Developer Student Club (GDSC) is a Google Developers program for university students to learn mobile and web development skills. The club will be open to any student, ranging from novice developers who are just starting, to advanced developers who want to further their skills. The club is intended as a space for students to try out new ideas and collaborate to solve mobile and web development problems.</p>
+		
+<p class="sectiontag text-big">What does GDSC-PRMIT&R work on?</p>
+<p class="sectionsubtag text-small">We at GDSC-PRMIT&R the group of people who are responsible for and fully invested in developing the community.We want to grow their knowledge in a peer-to-peer learning environment and put theory into practice by building projects that solve for community problems and make a significant impact.</p>
+</div>
+	<div class="thumbnail">
+	<img src="pic/prmitr.jpg" alt="" class="imgfluid">
+</div>
+	</section>
+	<section class="event" id="event">
+		<div class="manage">
+            <table>
+             <tr>
+               <td>
+                 <img src="pic/event.jpg" alt="" width="400" height="300">
+             </td>
+             <h1>Events</h1>
+             <td>
+<p class="sec text-big">What does we explain in events?</p>
+            <p class="sec text-small">Google collaborates with university students through student clubs to grow developer communities. GDSCs provide:
+				 Opportunities to enhance their technical knowledge,
+				 Gain industrial experience by solving problems using technology,
+				 Display prototypes & solutions for industries and organizations.
+				Google Developers supports and recognizes GDSCs, but does not own or manage them. </p>
+             </td>
+           </tr>
+              </table>
+        </div>
+	</section>
+	<section class="contact" id="contact">
+	<h1 class="text-center">Contact Us</h1>
+	<div class="form">
+			<input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+			<input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your Phone Number">
+			<input class="form-input" type="email" name="email" id="email" placeholder="Enter Your Email">
+			<textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate Your Response"></textarea>
+			<button class="btn btn-dark">Submit</button>
+	</div>
+</section>
+<footer class="background">
+	<p class="text-center">
+	Copyright &copy; 2027 - All rights reserved
+	</p>
+</footer>
+<script src="js/resp.js"></script>
+	
+</body>
+</html>
